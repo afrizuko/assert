@@ -24,3 +24,10 @@ func Nil[T any](t *testing.T, object *T) {
 		t.Fail()
 	}
 }
+
+func NotNil[T any](t *testing.T, object *T) {
+	if object == nil {
+		t.Error("expected object not to be nil")
+		t.Fail()
+	}
+}

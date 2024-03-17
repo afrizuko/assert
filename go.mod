@@ -1,3 +1,3 @@
-module github.com/afrizuko/go/assert
+module github.com/afrizuko/assert
 
 go 1.18

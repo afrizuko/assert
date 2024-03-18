@@ -5,13 +5,13 @@ import (
 )
 
 func Error(t *testing.T, err error) {
-	if err != nil {
+	if err == nil {
 		t.Errorf("expected no error but got %v", err)
 	}
 }
 
 func NoError(t *testing.T, err error) {
-	if err == nil {
+	if err != nil {
 		t.Error("expected error but got nil")
 	}
 }
